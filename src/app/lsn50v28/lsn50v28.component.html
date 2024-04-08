@@ -1,0 +1,82 @@
+<div class="page-container">
+    <div class="page-header">
+        Sensor name: LSN50v2-8 <br> <br>
+        AIR CONDITIONS
+    </div>
+    <div class="content-container">
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Sensor's Status
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                {{ sensorData[4].connection }}
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Last Updated
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                {{ sensorData[4].lastUpdated }}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Temperature
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                {{ sensorData[0].temperature_third }}°C
+            </mat-card-content>
+        </mat-card>
+
+                <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Optimal Range (Temperature)
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                <!-- Sensor 1 details -->
+                <div class="values">
+                    <div>
+                        Min. Temperature: <span class="min-value">25°C </span>
+                    </div>
+                    <div>
+                        Max. Temperature: <span class="max-value">35°C</span>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Illuminance
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                {{ sensorData[1].illum_third }} lux
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Battery
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                {{ sensorData[2].battery_third }}
+            </mat-card-content>
+        </mat-card>
+        <!-- Add more mat-cards for other sensors -->
+    </div>
+</div>

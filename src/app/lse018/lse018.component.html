@@ -1,0 +1,78 @@
+<div class="page-container">
+    <div class="page-header">
+        Sensor name: LSE01-8 <br> <br>
+        SOIL CONDITIONS
+    </div>
+    <div class="content-container">
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Sensor's Status
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                {{sensorData[4].connection}}
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Last Updated
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                <!-- Sensor 1 details -->
+                {{sensorData[4].lastUpdated}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Temperature
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                <!-- Sensor 1 details -->
+                {{sensorData[0].temperature_second}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Moisture
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                <!-- Sensor 1 details -->
+                {{sensorData[1].moisture_second}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Electrical Conductivity
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                <!-- Sensor 1 details -->
+                {{sensorData[2].EC_second}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="card-container">
+            <mat-card-header class="card-header">
+                <mat-card-title class="card-header-text">
+                    Battery
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content-container">
+                <!-- Sensor 1 details -->
+                {{sensorData[3].battery_second}}
+            </mat-card-content>
+        </mat-card>
+        <!-- Add more mat-cards for other sensors -->
+    </div>
+</div>
